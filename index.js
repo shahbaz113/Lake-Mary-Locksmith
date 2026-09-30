@@ -1,0 +1,345 @@
+export default {
+  async fetch(request, env, ctx) {
+    return new Response(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lake Mary Locksmith provides information about 24/7 emergency and mobile locksmith services, lockouts, key replacement, rekeying, and security solutions.">
+  <meta name="robots" content="index, follow">
+  <title>Lake Mary Locksmith | 24/7 Emergency & Mobile Locksmith Services</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(30, 136, 229, 0.18), transparent 35%),
+        linear-gradient(135deg, #07111f, #0d1d31 55%, #102b43);
+      color: #243447;
+      line-height: 1.75;
+      min-height: 100vh;
+      padding: 40px 18px;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero {
+      position: relative;
+      padding: 58px 55px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #0b5fa5, #123c63 65%, #0b263f);
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .hero::before {
+      width: 230px;
+      height: 230px;
+      right: -70px;
+      top: -100px;
+    }
+
+    .hero::after {
+      width: 150px;
+      height: 150px;
+      left: -70px;
+      bottom: -80px;
+    }
+
+    .badge {
+      position: relative;
+      display: inline-block;
+      padding: 7px 14px;
+      margin-bottom: 17px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 30px;
+      background: rgba(255,255,255,0.1);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      position: relative;
+      max-width: 760px;
+      margin-bottom: 15px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      position: relative;
+      max-width: 720px;
+      color: #e4f2ff;
+      font-size: 17px;
+    }
+
+    .content {
+      padding: 45px 55px 52px;
+    }
+
+    h2 {
+      margin: 30px 0 13px;
+      color: #123c63;
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 18px;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 15px 0 25px 22px;
+    }
+
+    li {
+      margin-bottom: 9px;
+      padding-left: 5px;
+    }
+
+    a {
+      color: #0b65ad;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(11, 101, 173, 0.25);
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      color: #083f6d;
+      border-bottom-color: #083f6d;
+    }
+
+    .service-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .service {
+      padding: 18px;
+      background: #f3f8fc;
+      border: 1px solid #dceaf4;
+      border-radius: 14px;
+    }
+
+    .service strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #123c63;
+      font-size: 15px;
+    }
+
+    .service span {
+      color: #617386;
+      font-size: 13px;
+    }
+
+    .closing {
+      margin-top: 30px;
+      padding: 22px 24px;
+      border-left: 4px solid #1686d8;
+      background: #f1f7fb;
+      border-radius: 0 12px 12px 0;
+    }
+
+    footer {
+      padding: 20px 55px;
+      background: #081727;
+      color: #a9bacb;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 10px;
+      }
+
+      .hero,
+      .content {
+        padding: 34px 25px;
+      }
+
+      .service-box {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        padding: 18px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <article class="card">
+
+      <header class="hero">
+        <span class="badge">24/7 Emergency & Mobile Service</span>
+
+        <h1>
+          Lake Mary Locksmith | 24/7 Emergency & Mobile Locksmith Services
+        </h1>
+
+        <p>
+          Reliable locksmith solutions for residential, automotive, and commercial
+          security needs in Lake Mary and surrounding communities.
+        </p>
+      </header>
+
+      <section class="content">
+
+        <h2>Professional Locksmith Services in Lake Mary</h2>
+
+        <p>
+          Getting locked out of a home, vehicle, or business can happen unexpectedly,
+          and finding a dependable locksmith quickly can make a stressful situation
+          much easier to manage. Lake Mary locksmith services are designed to provide
+          practical solutions for urgent lockouts, damaged locks, lost keys, and
+          everyday security requirements. Mobile locksmith professionals can travel
+          directly to a customer's location, making assistance especially convenient
+          when access to a traditional storefront is not possible.
+        </p>
+
+        <p>
+          A modern locksmith service can handle more than simple lockouts. Depending
+          on the situation, technicians may assist with key replacement, lock
+          rekeying, lock repair, vehicle key services, and upgrades intended to
+          improve property security. For homeowners, landlords, business owners, and
+          drivers, choosing an experienced local provider can help ensure the
+          appropriate solution is selected for the specific lock or access problem.
+        </p>
+
+        <div class="service-box">
+
+          <div class="service">
+            <strong>Emergency Lockouts</strong>
+            <span>Fast assistance for unexpected access problems.</span>
+          </div>
+
+          <div class="service">
+            <strong>Residential Security</strong>
+            <span>Lock repair, replacement, and rekeying options.</span>
+          </div>
+
+          <div class="service">
+            <strong>Mobile Locksmith</strong>
+            <span>On-location solutions for homes, vehicles, and businesses.</span>
+          </div>
+
+        </div>
+
+        <h2>Emergency and Mobile Locksmith Solutions</h2>
+
+        <p>
+          When selecting a locksmith, customers should consider availability,
+          service coverage, communication, and the type of assistance required.
+          Emergency situations may include a broken key, a malfunctioning lock, a
+          vehicle lockout, or an urgent need to secure a property after a lock has
+          been damaged. For more information about local locksmith assistance,
+          visit
+          <a href="https://thelakemarylocksmith.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+             Lake mary locksmith
+          </a>
+          to explore available services and solutions.
+        </p>
+
+        <p>
+          Common situations where professional locksmith assistance may be useful
+          include:
+        </p>
+
+        <ul>
+          <li>Home and apartment lockouts requiring prompt access.</li>
+          <li>Lost, stolen, or damaged keys that need replacement.</li>
+          <li>Broken or worn locks requiring repair or replacement.</li>
+          <li>Vehicle lockouts and automotive key-related problems.</li>
+          <li>Rekeying services after moving into a new property.</li>
+          <li>Security improvements for residential or commercial doors.</li>
+        </ul>
+
+        <h2>Choosing the Right Locksmith for Your Needs</h2>
+
+        <p>
+          Locksmith work involves both access and security, so it is important to
+          use a professional who can clearly explain the available options before
+          beginning a job. A reliable service should provide appropriate assistance
+          for the type of lock involved while taking care to protect the property
+          during the process. Whether the need is an urgent lockout or a planned
+          security upgrade, local mobile locksmith services can provide a convenient
+          way to address access and lock-related concerns.
+        </p>
+
+        <div class="closing">
+          <strong>Need locksmith assistance?</strong><br>
+          Understanding the service required before requesting help can make the
+          process smoother, whether the situation involves an emergency lockout,
+          replacement keys, lock repair, or a broader property security upgrade.
+        </div>
+
+      </section>
+
+      <footer>
+        Lake Mary Locksmith Information
+        &nbsp;•&nbsp;
+        Emergency & Mobile Locksmith Services
+      </footer>
+
+    </article>
+  </main>
+
+  <script>
+    // Cloudflare Worker page initialization
+    document.addEventListener("DOMContentLoaded", function () {
+      document.documentElement.classList.add("page-ready");
+    });
+  </script>
+
+</body>
+</html>`, {
+      status: 200,
+      headers: {
+        "content-type": "text/html; charset=UTF-8",
+        "cache-control": "public, max-age=3600",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin"
+      }
+    });
+  }
+};
